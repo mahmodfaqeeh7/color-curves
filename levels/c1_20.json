@@ -1,0 +1,161 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_20",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Final Color",
+  "ar": "اللون الأخير"
+ },
+ "difficulty": "hard",
+ "chapter": 1,
+ "number": 20,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    50,
+    60
+   ],
+   "velocity": [
+    170,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 5,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    200,
+    200
+   ],
+   "size": [
+    60,
+    20
+   ],
+   "rotation": -20,
+   "color": "blue"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "regular",
+   "center": [
+    330,
+    110
+   ],
+   "radius": 28,
+   "sides": 5,
+   "rotation": 180,
+   "color": "green"
+  },
+  {
+   "id": "P3",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    420,
+    240
+   ],
+   "size": [
+    50,
+    50
+   ],
+   "rotation": 30,
+   "color": "red"
+  },
+  {
+   "id": "P4",
+   "type": "painter",
+   "shape": "regular",
+   "center": [
+    250,
+    320
+   ],
+   "radius": 30,
+   "sides": 6,
+   "rotation": 0,
+   "color": "green"
+  },
+  {
+   "id": "N1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    520,
+    180
+   ],
+   "size": [
+    16,
+    120
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    590,
+    310
+   ],
+   "innerRadius": 28,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 2,
+  "maxInkLength": null,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2
+ },
+ "tip": {
+  "en": "Five balls, two strokes, one final color.",
+  "ar": "خمس كرات، خطان، ولون أخير واحد."
+ },
+ "hint": {
+  "en": "Find a green touch that is not followed by red or blue.",
+  "ar": "ابحث عن لمسة خضراء لا يتبعها أحمر أو أزرق."
+ },
+ "star": {
+  "pos": [
+   539.0,
+   278.0
+  ]
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c5_11",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Back Door",
+  "ar": "الباب الخلفي"
+ },
+ "difficulty": "medium",
+ "chapter": 5,
+ "number": 11,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    450,
+    150
+   ],
+   "size": [
+    20,
+    300
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "T1",
+   "type": "portal",
+   "shape": "regular",
+   "center": [
+    300,
+    430
+   ],
+   "radius": 24,
+   "sides": 16,
+   "rotation": 0,
+   "to": [
+    600,
+    90
+   ]
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    905,
+    230
+   ],
+   "size": [
+    18,
+    320
+   ],
+   "rotation": 0,
+   "color": "red"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    790,
+    440
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 670,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 530
+ },
+ "tip": {
+  "en": "The wall blocks the high road. The wormhole does not care.",
+  "ar": "الجدار يسدّ الطريق العلوي، لكن الثقب الدودي لا يهتم."
+ },
+ "hint": {
+  "en": "Drop into the lower ring. The balls fly out toward the red wall.",
+  "ar": "انزل في الحلقة السفلية، فتخرج الكرات طائرة نحو الجدار الأحمر."
+ },
+ "star": {
+  "pos": [
+   869.0,
+   300.0
+  ]
+ }
+}

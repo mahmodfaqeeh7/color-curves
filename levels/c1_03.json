@@ -1,0 +1,106 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_03",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Touch the Red",
+  "ar": "المس الأحمر"
+ },
+ "difficulty": "intro",
+ "chapter": 1,
+ "number": 3,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    60,
+    80
+   ],
+   "velocity": [
+    150,
+    -40
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    450,
+    200
+   ],
+   "size": [
+    18,
+    150
+   ],
+   "rotation": 0,
+   "color": "red"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    415,
+    318
+   ],
+   "innerRadius": 30,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 5,
+  "maxInkLength": null,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1
+ },
+ "tip": {
+  "en": "A ball takes the color of the last colored shape it touches.",
+  "ar": "الكرة تأخذ لون آخر شكل ملوّن تلمسه."
+ },
+ "hint": {
+  "en": "Send the balls into the red wall; they bounce back red.",
+  "ar": "وجّه الكرات نحو الجدار الأحمر؛ سترتد حمراء."
+ },
+ "star": {
+  "pos": [
+   413.0,
+   231.0
+  ]
+ }
+}

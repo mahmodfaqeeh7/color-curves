@@ -1,0 +1,358 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_12",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Bumper Climb",
+  "ar": "صعود المصدّ"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 12,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red",
+    "blue"
+   ],
+   "count": 12,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "K1",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     0,
+     400
+    ],
+    [
+     200,
+     380
+    ],
+    [
+     330,
+     460
+    ],
+    [
+     330,
+     540
+    ],
+    [
+     0,
+     540
+    ]
+   ]
+  },
+  {
+   "id": "U1",
+   "type": "booster",
+   "shape": "rect",
+   "center": [
+    430,
+    470
+   ],
+   "size": [
+    120,
+    36
+   ],
+   "rotation": 0,
+   "push": [
+    900,
+    -1300
+   ]
+  },
+  {
+   "id": "B1",
+   "type": "bumper",
+   "shape": "regular",
+   "center": [
+    620,
+    300
+   ],
+   "radius": 30,
+   "sides": 16,
+   "rotation": 0
+  },
+  {
+   "id": "K2",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     700,
+     540
+    ],
+    [
+     760,
+     420
+    ],
+    [
+     960,
+     400
+    ],
+    [
+     960,
+     540
+    ]
+   ]
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    735,
+    135
+   ],
+   "size": [
+    24,
+    270
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     830.0,
+     115.0
+    ],
+    [
+     846.2,
+     117.4
+    ],
+    [
+     861.0,
+     124.6
+    ],
+    [
+     873.0,
+     135.7
+    ],
+    [
+     881.2,
+     149.9
+    ],
+    [
+     884.8,
+     165.9
+    ],
+    [
+     883.6,
+     182.2
+    ],
+    [
+     877.6,
+     197.5
+    ],
+    [
+     867.4,
+     210.3
+    ],
+    [
+     853.9,
+     219.6
+    ],
+    [
+     838.2,
+     224.4
+    ],
+    [
+     821.8,
+     224.4
+    ],
+    [
+     806.1,
+     219.6
+    ],
+    [
+     792.6,
+     210.3
+    ],
+    [
+     782.4,
+     197.5
+    ],
+    [
+     792.8,
+     191.5
+    ],
+    [
+     800.8,
+     201.5
+    ],
+    [
+     811.3,
+     208.7
+    ],
+    [
+     823.6,
+     212.5
+    ],
+    [
+     836.4,
+     212.5
+    ],
+    [
+     848.7,
+     208.7
+    ],
+    [
+     859.2,
+     201.5
+    ],
+    [
+     867.2,
+     191.5
+    ],
+    [
+     871.9,
+     179.6
+    ],
+    [
+     872.9,
+     166.8
+    ],
+    [
+     870.0,
+     154.3
+    ],
+    [
+     863.6,
+     143.2
+    ],
+    [
+     854.2,
+     134.5
+    ],
+    [
+     842.7,
+     128.9
+    ],
+    [
+     830.0,
+     127.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    228.0,
+    269.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    452.0,
+    381.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    648.0,
+    409.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    830,
+    170
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 400,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 330
+ },
+ "tip": {
+  "en": "Red and blue take turns. Only red gets through the door.",
+  "ar": "الأحمر والأزرق يتناوبان. الأحمر وحده يعبر الباب."
+ },
+ "hint": {
+  "en": "Roll onto the pad and let the bumper aim the balls at the goal.",
+  "ar": "تدحرج إلى لوحة الدفع ودع المصدّ يصوّب الكرات نحو الهدف."
+ },
+ "star": {
+  "pos": [
+   632.0,
+   239.0
+  ]
+ }
+}

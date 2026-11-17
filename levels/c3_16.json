@@ -1,0 +1,541 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_16",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Side Split",
+  "ar": "انقسام جانبي"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 16,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  630,
+  0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    60,
+    60
+   ],
+   "velocity": [
+    0,
+    220
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 9,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "X1",
+   "type": "splitter",
+   "shape": "regular",
+   "center": [
+    300,
+    270
+   ],
+   "radius": 36,
+   "sides": 3,
+   "rotation": 90
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    560,
+    150
+   ],
+   "size": [
+    20,
+    140
+   ],
+   "rotation": 0,
+   "color": "red"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    560,
+    420
+   ],
+   "size": [
+    20,
+    140
+   ],
+   "rotation": 0,
+   "color": "blue"
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    760,
+    130
+   ],
+   "size": [
+    24,
+    260
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    270
+   ],
+   "size": [
+    24,
+    20
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G2",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    760,
+    410
+   ],
+   "size": [
+    24,
+    260
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WB",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    952,
+    270
+   ],
+   "size": [
+    16,
+    540
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WM",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    860,
+    270
+   ],
+   "size": [
+    184,
+    16
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WT",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    860,
+    8
+   ],
+   "size": [
+    184,
+    16
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WF",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    860,
+    532
+   ],
+   "size": [
+    184,
+    16
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     910.0,
+     75.0
+    ],
+    [
+     928.2,
+     78.1
+    ],
+    [
+     944.3,
+     87.0
+    ],
+    [
+     956.6,
+     100.7
+    ],
+    [
+     963.6,
+     117.8
+    ],
+    [
+     964.7,
+     136.2
+    ],
+    [
+     959.6,
+     153.9
+    ],
+    [
+     948.9,
+     168.9
+    ],
+    [
+     933.9,
+     179.6
+    ],
+    [
+     916.2,
+     184.7
+    ],
+    [
+     897.8,
+     183.6
+    ],
+    [
+     880.7,
+     176.6
+    ],
+    [
+     867.0,
+     164.3
+    ],
+    [
+     858.1,
+     148.2
+    ],
+    [
+     855.0,
+     130.0
+    ],
+    [
+     867.0,
+     130.0
+    ],
+    [
+     869.4,
+     144.2
+    ],
+    [
+     876.4,
+     156.8
+    ],
+    [
+     887.1,
+     166.4
+    ],
+    [
+     900.4,
+     171.9
+    ],
+    [
+     914.8,
+     172.7
+    ],
+    [
+     928.7,
+     168.7
+    ],
+    [
+     940.4,
+     160.4
+    ],
+    [
+     948.7,
+     148.7
+    ],
+    [
+     952.7,
+     134.8
+    ],
+    [
+     951.9,
+     120.4
+    ],
+    [
+     946.4,
+     107.1
+    ],
+    [
+     936.8,
+     96.4
+    ],
+    [
+     924.2,
+     89.4
+    ],
+    [
+     910.0,
+     87.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "id": "CUP_C2_0",
+   "points": [
+    [
+     862.4,
+     447.5
+    ],
+    [
+     856.9,
+     434.2
+    ],
+    [
+     855.0,
+     420.0
+    ],
+    [
+     856.9,
+     405.8
+    ],
+    [
+     862.4,
+     392.5
+    ],
+    [
+     871.1,
+     381.1
+    ],
+    [
+     882.5,
+     372.4
+    ],
+    [
+     895.8,
+     366.9
+    ],
+    [
+     910.0,
+     365.0
+    ],
+    [
+     924.2,
+     366.9
+    ],
+    [
+     937.5,
+     372.4
+    ],
+    [
+     948.9,
+     381.1
+    ],
+    [
+     957.6,
+     392.5
+    ],
+    [
+     963.1,
+     405.8
+    ],
+    [
+     965.0,
+     420.0
+    ],
+    [
+     953.0,
+     420.0
+    ],
+    [
+     951.5,
+     408.9
+    ],
+    [
+     947.2,
+     398.5
+    ],
+    [
+     940.4,
+     389.6
+    ],
+    [
+     931.5,
+     382.8
+    ],
+    [
+     921.1,
+     378.5
+    ],
+    [
+     910.0,
+     377.0
+    ],
+    [
+     898.9,
+     378.5
+    ],
+    [
+     888.5,
+     382.8
+    ],
+    [
+     879.6,
+     389.6
+    ],
+    [
+     872.8,
+     398.5
+    ],
+    [
+     868.5,
+     408.9
+    ],
+    [
+     867.0,
+     420.0
+    ],
+    [
+     868.5,
+     431.1
+    ],
+    [
+     872.8,
+     441.5
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    480.0,
+    269.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    452.0,
+    465.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    116.0,
+    213.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    910,
+    130
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  },
+  {
+   "id": "C2",
+   "center": [
+    910,
+    420
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 510,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 430
+ },
+ "tip": {
+  "en": "Gravity pulls right. The prism still splits.",
+  "ar": "الجاذبية تسحب يمينًا، والمنشور ما زال يقسم."
+ },
+ "hint": {
+  "en": "Send one copy up onto red and the other down onto blue.",
+  "ar": "أرسل نسخة للأعلى نحو الأحمر والأخرى للأسفل نحو الأزرق."
+ },
+ "star": {
+  "pos": [
+   537.0,
+   332.0
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_05",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Switch and Door",
+  "ar": "مفتاح وباب"
+ },
+ "difficulty": "easy",
+ "chapter": 2,
+ "number": 5,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red",
+    "blue"
+   ],
+   "count": 12,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "S1",
+   "type": "switch",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    430,
+    200
+   ],
+   "size": [
+    24,
+    400
+   ],
+   "rotation": 0,
+   "move": [
+    0,
+    -330
+   ],
+   "speed": 450
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    430,
+    470
+   ],
+   "size": [
+    24,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W5",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    650,
+    110
+   ],
+   "size": [
+    24,
+    220
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    650,
+    340
+   ],
+   "size": [
+    24,
+    240
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W6",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    650,
+    500
+   ],
+   "size": [
+    24,
+    80
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    830,
+    420
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 700,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 500
+ },
+ "tip": {
+  "en": "This launcher alternates red and blue balls.",
+  "ar": "هذا المدفع يطلق كرة حمراء ثم زرقاء بالتناوب."
+ },
+ "hint": {
+  "en": "Red balls open the switch; only blue balls pass the door.",
+  "ar": "الكرات الحمراء تفتح الجدار؛ والزرقاء وحدها تعبر الباب."
+ },
+ "star": {
+  "pos": [
+   470.0,
+   216.0
+  ]
+ }
+}

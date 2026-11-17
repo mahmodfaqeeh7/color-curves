@@ -1,0 +1,121 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c5_10",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Twin Holes",
+  "ar": "الثقبان"
+ },
+ "difficulty": "medium",
+ "chapter": 5,
+ "number": 10,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "H1",
+   "type": "blackhole",
+   "shape": "regular",
+   "center": [
+    480,
+    140
+   ],
+   "radius": 14,
+   "sides": 16,
+   "rotation": 0,
+   "reach": 160,
+   "strength": 1300
+  },
+  {
+   "id": "H2",
+   "type": "blackhole",
+   "shape": "regular",
+   "center": [
+    480,
+    460
+   ],
+   "radius": 14,
+   "sides": 16,
+   "rotation": 0,
+   "reach": 160,
+   "strength": 1300
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    860,
+    350
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 970,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 790
+ },
+ "tip": {
+  "en": "Halfway between two black holes, their pulls cancel out.",
+  "ar": "في منتصف المسافة بين ثقبين أسودين تتعادل قوتاهما."
+ },
+ "hint": {
+  "en": "Thread your line through the middle.",
+  "ar": "مرّر خطك من المنتصف تمامًا."
+ },
+ "star": {
+  "pos": [
+   485,
+   292
+  ]
+ }
+}

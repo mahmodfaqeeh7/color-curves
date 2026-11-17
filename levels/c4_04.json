@@ -1,0 +1,122 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c4_04",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Uphill Belt",
+  "ar": "السير الصاعد"
+ },
+ "difficulty": "easy",
+ "chapter": 4,
+ "number": 4,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "B1",
+   "type": "conveyor",
+   "shape": "rect",
+   "center": [
+    590,
+    300
+   ],
+   "size": [
+    360,
+    18
+   ],
+   "rotation": -10,
+   "speed": 230
+  },
+  {
+   "id": "LV0",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    480.0,
+    520
+   ],
+   "size": [
+    960,
+    40
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    880,
+    320
+   ],
+   "innerRadius": 34,
+   "targetColor": "yellow",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 500,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 350
+ },
+ "tip": {
+  "en": "A conveyor belt carries balls along its arrows, even uphill.",
+  "ar": "السير المتحرك يحمل الكرات باتجاه أسهمه، حتى صعودًا."
+ },
+ "hint": {
+  "en": "Deliver the balls to the low end of the belt.",
+  "ar": "أوصل الكرات إلى الطرف المنخفض من السير."
+ },
+ "star": {
+  "pos": [
+   790.0,
+   254.0
+  ]
+ }
+}

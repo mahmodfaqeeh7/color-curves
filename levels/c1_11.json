@@ -1,0 +1,137 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_11",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Odd Shape",
+  "ar": "شكل غريب"
+ },
+ "difficulty": "medium",
+ "chapter": 1,
+ "number": 11,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    50,
+    60
+   ],
+   "velocity": [
+    170,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "poly",
+   "points": [
+    [
+     250,
+     175
+    ],
+    [
+     330,
+     150
+    ],
+    [
+     395,
+     185
+    ],
+    [
+     370,
+     240
+    ],
+    [
+     300,
+     262
+    ],
+    [
+     255,
+     225
+    ]
+   ],
+   "color": "green"
+  },
+  {
+   "id": "N1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    575,
+    230
+   ],
+   "size": [
+    16,
+    160
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    505,
+    315
+   ],
+   "innerRadius": 28,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 3,
+  "maxInkLength": null,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1
+ },
+ "tip": {
+  "en": "Every face of a shape bounces differently.",
+  "ar": "كل وجه من الشكل يرتد بطريقة مختلفة."
+ },
+ "hint": {
+  "en": "Land on the long upper face so balls roll off to the right.",
+  "ar": "اجعل الكرات تهبط على الوجه العلوي الطويل لتتدحرج يمينًا."
+ },
+ "star": {
+  "pos": [
+   436.0,
+   203.0
+  ]
+ }
+}

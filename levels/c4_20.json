@@ -1,0 +1,256 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c4_20",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Eruption",
+  "ar": "الثوران"
+ },
+ "difficulty": "expert",
+ "chapter": 4,
+ "number": 20,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    120,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 11,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "B1",
+   "type": "conveyor",
+   "shape": "rect",
+   "center": [
+    300,
+    340
+   ],
+   "size": [
+    260,
+    18
+   ],
+   "rotation": -8,
+   "speed": 220
+  },
+  {
+   "id": "D1",
+   "type": "door",
+   "shape": "rect",
+   "center": [
+    446,
+    264
+   ],
+   "size": [
+    16,
+    112
+   ],
+   "rotation": 0,
+   "period": 3.0,
+   "open": 1.4,
+   "phase": 0.0
+  },
+  {
+   "id": "W0",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    446,
+    104
+   ],
+   "size": [
+    16,
+    208
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "F1",
+   "type": "fan",
+   "shape": "rect",
+   "center": [
+    512,
+    330
+   ],
+   "size": [
+    100,
+    360
+   ],
+   "rotation": 0,
+   "push": [
+    0,
+    -1000
+   ]
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    574,
+    410
+   ],
+   "size": [
+    20,
+    260
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W4",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    530,
+    142
+   ],
+   "size": [
+    160,
+    16
+   ],
+   "rotation": 8
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    750,
+    470
+   ],
+   "size": [
+    16,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W3",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    890,
+    470
+   ],
+   "size": [
+    16,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "GL1",
+   "type": "glass",
+   "shape": "rect",
+   "center": [
+    820,
+    393
+   ],
+   "size": [
+    124,
+    14
+   ],
+   "rotation": 0,
+   "hits": 3
+  },
+  {
+   "id": "LV0",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    371.0,
+    520
+   ],
+   "size": [
+    742,
+    40
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV1",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    929.0,
+    520
+   ],
+   "size": [
+    62,
+    40
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    820,
+    482
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 430,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 380
+ },
+ "tip": {
+  "en": "Everything the volcano taught you, in one run.",
+  "ar": "كل ما علّمك إياه البركان، في جولة واحدة."
+ },
+ "hint": {
+  "en": "Feed the belt. After the fan, guide the balls onto the glass lid.",
+  "ar": "أوصل الكرات إلى السير، وبعد المروحة وجّهها إلى الغطاء الزجاجي."
+ },
+ "star": {
+  "pos": [
+   394.0,
+   292.0
+  ]
+ }
+}

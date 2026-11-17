@@ -1,0 +1,121 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c5_05",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Quiet Zone",
+  "ar": "المنطقة الصامتة"
+ },
+ "difficulty": "easy",
+ "chapter": 5,
+ "number": 5,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    480,
+    270
+   ],
+   "size": [
+    200,
+    540
+   ],
+   "rotation": 0,
+   "gravity": [
+    0,
+    0
+   ],
+   "drag": 0.0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    850,
+    440
+   ],
+   "innerRadius": 34,
+   "targetColor": "yellow",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 590,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": [
+   {
+    "rect": [
+     380,
+     0,
+     200,
+     540
+    ]
+   }
+  ]
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 420
+ },
+ "tip": {
+  "en": "You cannot draw inside the striped zone. Balls float straight through it.",
+  "ar": "لا يمكنك الرسم داخل المنطقة المخططة، والكرات تطفو عبرها بخط مستقيم."
+ },
+ "hint": {
+  "en": "Aim the balls across, then catch them on the other side.",
+  "ar": "صوّب الكرات لتعبر، ثم التقطها في الجهة الأخرى."
+ },
+ "star": {
+  "pos": [
+   564.0,
+   209.0
+  ]
+ }
+}

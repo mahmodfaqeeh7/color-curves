@@ -1,0 +1,497 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_02",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Prism Run",
+  "ar": "سباق المنشور"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 2,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 5,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "X1",
+   "type": "splitter",
+   "shape": "regular",
+   "center": [
+    330,
+    270
+   ],
+   "radius": 36,
+   "sides": 3,
+   "rotation": 90
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    520,
+    300
+   ],
+   "size": [
+    130,
+    20
+   ],
+   "rotation": 6,
+   "color": "red"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    500,
+    460
+   ],
+   "size": [
+    130,
+    20
+   ],
+   "rotation": 6,
+   "color": "blue"
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    75
+   ],
+   "size": [
+    24,
+    150
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    760,
+    250
+   ],
+   "size": [
+    24,
+    200
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    375
+   ],
+   "size": [
+    24,
+    50
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G2",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    760,
+    470
+   ],
+   "size": [
+    24,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WB",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    952,
+    270
+   ],
+   "size": [
+    16,
+    540
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     865.0,
+     260.0
+    ],
+    [
+     879.2,
+     261.9
+    ],
+    [
+     892.5,
+     267.4
+    ],
+    [
+     903.9,
+     276.1
+    ],
+    [
+     912.6,
+     287.5
+    ],
+    [
+     918.1,
+     300.8
+    ],
+    [
+     920.0,
+     315.0
+    ],
+    [
+     918.1,
+     329.2
+    ],
+    [
+     912.6,
+     342.5
+    ],
+    [
+     903.9,
+     353.9
+    ],
+    [
+     892.5,
+     362.6
+    ],
+    [
+     879.2,
+     368.1
+    ],
+    [
+     865.0,
+     370.0
+    ],
+    [
+     865.0,
+     358.0
+    ],
+    [
+     876.1,
+     356.5
+    ],
+    [
+     886.5,
+     352.2
+    ],
+    [
+     895.4,
+     345.4
+    ],
+    [
+     902.2,
+     336.5
+    ],
+    [
+     906.5,
+     326.1
+    ],
+    [
+     908.0,
+     315.0
+    ],
+    [
+     906.5,
+     303.9
+    ],
+    [
+     902.2,
+     293.5
+    ],
+    [
+     895.4,
+     284.6
+    ],
+    [
+     886.5,
+     277.8
+    ],
+    [
+     876.1,
+     273.5
+    ],
+    [
+     865.0,
+     272.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "id": "CUP_C2_0",
+   "points": [
+    [
+     897.5,
+     422.4
+    ],
+    [
+     910.3,
+     432.6
+    ],
+    [
+     919.6,
+     446.1
+    ],
+    [
+     924.4,
+     461.8
+    ],
+    [
+     924.4,
+     478.2
+    ],
+    [
+     919.6,
+     493.9
+    ],
+    [
+     910.3,
+     507.4
+    ],
+    [
+     897.5,
+     517.6
+    ],
+    [
+     882.2,
+     523.6
+    ],
+    [
+     865.9,
+     524.8
+    ],
+    [
+     849.9,
+     521.2
+    ],
+    [
+     835.7,
+     513.0
+    ],
+    [
+     824.6,
+     501.0
+    ],
+    [
+     817.4,
+     486.2
+    ],
+    [
+     815.0,
+     470.0
+    ],
+    [
+     827.0,
+     470.0
+    ],
+    [
+     828.9,
+     482.7
+    ],
+    [
+     834.5,
+     494.2
+    ],
+    [
+     843.2,
+     503.6
+    ],
+    [
+     854.3,
+     510.0
+    ],
+    [
+     866.8,
+     512.9
+    ],
+    [
+     879.6,
+     511.9
+    ],
+    [
+     891.5,
+     507.2
+    ],
+    [
+     901.5,
+     499.2
+    ],
+    [
+     908.7,
+     488.7
+    ],
+    [
+     912.5,
+     476.4
+    ],
+    [
+     912.5,
+     463.6
+    ],
+    [
+     908.7,
+     451.3
+    ],
+    [
+     901.5,
+     440.8
+    ],
+    [
+     891.5,
+     432.8
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    368.0,
+    409.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    200.0,
+    269.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    648.0,
+    353.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    865,
+    315
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  },
+  {
+   "id": "C2",
+   "center": [
+    870,
+    470
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 820,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 710
+ },
+ "tip": {
+  "en": "Five balls, ten goals' worth. Every copy counts.",
+  "ar": "خمس كرات تكفي لعشر. كل نسخة مهمة."
+ },
+ "hint": {
+  "en": "Split once, then send one copy over red and one over blue.",
+  "ar": "اقسم مرة، ثم أرسل نسخة فوق الأحمر وأخرى فوق الأزرق."
+ },
+ "star": {
+  "pos": [
+   482.0,
+   262.0
+  ]
+ }
+}

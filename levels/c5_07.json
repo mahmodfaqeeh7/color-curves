@@ -1,0 +1,123 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c5_07",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Purple Rain",
+  "ar": "مطر بنفسجي"
+ },
+ "difficulty": "medium",
+ "chapter": 5,
+ "number": 7,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "X1",
+   "type": "mixer",
+   "shape": "rect",
+   "center": [
+    300,
+    400
+   ],
+   "size": [
+    140,
+    18
+   ],
+   "rotation": 6,
+   "color": "yellow"
+  },
+  {
+   "id": "X2",
+   "type": "mixer",
+   "shape": "rect",
+   "center": [
+    520,
+    250
+   ],
+   "size": [
+    120,
+    18
+   ],
+   "rotation": 8,
+   "color": "blue"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    850,
+    430
+   ],
+   "innerRadius": 34,
+   "targetColor": "purple",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 600,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 480
+ },
+ "tip": {
+  "en": "Red + blue = purple. The yellow mixer below is a trap.",
+  "ar": "أحمر + أزرق = بنفسجي. الخلّاط الأصفر في الأسفل فخ."
+ },
+ "hint": {
+  "en": "Keep the balls high, over the blue mixer.",
+  "ar": "أبقِ الكرات عالية، فوق الخلّاط الأزرق."
+ },
+ "star": {
+  "pos": [
+   436.0,
+   149.0
+  ]
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c5_09",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Green Light",
+  "ar": "الضوء الأخضر"
+ },
+ "difficulty": "medium",
+ "chapter": 5,
+ "number": 9,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "X1",
+   "type": "mixer",
+   "shape": "rect",
+   "center": [
+    300,
+    300
+   ],
+   "size": [
+    130,
+    18
+   ],
+   "rotation": 10,
+   "color": "blue"
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    520,
+    110
+   ],
+   "size": [
+    24,
+    220
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "green",
+   "shape": "rect",
+   "center": [
+    520,
+    380
+   ],
+   "size": [
+    24,
+    320
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    300,
+    440
+   ],
+   "size": [
+    140,
+    18
+   ],
+   "rotation": 6,
+   "color": "red"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    840,
+    450
+   ],
+   "innerRadius": 34,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 540,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 420
+ },
+ "tip": {
+  "en": "Yellow + blue = green, the color of the door.",
+  "ar": "أصفر + أزرق = أخضر، لون الباب."
+ },
+ "hint": {
+  "en": "Mix green first, then roll through the green door.",
+  "ar": "اصنع الأخضر أولًا، ثم اعبر الباب الأخضر."
+ },
+ "star": {
+  "pos": [
+   715.0,
+   406.0
+  ]
+ }
+}

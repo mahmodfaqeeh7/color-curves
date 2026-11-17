@@ -1,0 +1,162 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_18",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Paint Field",
+  "ar": "حقل الألوان"
+ },
+ "difficulty": "hard",
+ "chapter": 1,
+ "number": 18,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    50,
+    60
+   ],
+   "velocity": [
+    160,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    190,
+    200
+   ],
+   "size": [
+    40,
+    40
+   ],
+   "rotation": 20,
+   "color": "red"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "regular",
+   "center": [
+    300,
+    120
+   ],
+   "radius": 26,
+   "sides": 5,
+   "rotation": 0,
+   "color": "green"
+  },
+  {
+   "id": "P3",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    330,
+    260
+   ],
+   "size": [
+    46,
+    46
+   ],
+   "rotation": 45,
+   "color": "blue"
+  },
+  {
+   "id": "P4",
+   "type": "painter",
+   "shape": "regular",
+   "center": [
+    450,
+    180
+   ],
+   "radius": 28,
+   "sides": 6,
+   "rotation": 0,
+   "color": "red"
+  },
+  {
+   "id": "P5",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    470,
+    320
+   ],
+   "size": [
+    60,
+    18
+   ],
+   "rotation": 0,
+   "color": "blue"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    580,
+    290
+   ],
+   "innerRadius": 28,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 2,
+  "maxInkLength": null,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2
+ },
+ "tip": {
+  "en": "Lots of paint here. Watch the very last touch.",
+  "ar": "ألوان كثيرة هنا. انتبه لآخر لمسة."
+ },
+ "hint": {
+  "en": "Touch green, then keep the balls clear of every other color.",
+  "ar": "المس الأخضر، ثم أبعد الكرات عن كل لون آخر."
+ },
+ "star": {
+  "pos": [
+   396.0,
+   216.0
+  ]
+ }
+}

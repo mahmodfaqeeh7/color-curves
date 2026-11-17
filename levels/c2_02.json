@@ -1,0 +1,166 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_02",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Blue Door",
+  "ar": "الباب الأزرق"
+ },
+ "difficulty": "easy",
+ "chapter": 2,
+ "number": 2,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0.0,
+  630.0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75.0,
+    105.0
+   ],
+   "velocity": [
+    255.0,
+    0.0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 7,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "B1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    307.5,
+    288.0
+   ],
+   "size": [
+    165.0,
+    24.0
+   ],
+   "rotation": 8,
+   "color": "blue"
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    585.0,
+    90.0
+   ],
+   "size": [
+    24.0,
+    180.0
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    585.0,
+    315.0
+   ],
+   "size": [
+    24.0,
+    270.0
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    585.0,
+    495.0
+   ],
+   "size": [
+    24.0,
+    90.0
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "R1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    705.0,
+    393.0
+   ],
+   "size": [
+    96.0,
+    21.0
+   ],
+   "rotation": 10,
+   "color": "red"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    877.5,
+    450.0
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 910,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 660
+ },
+ "tip": {
+  "en": "Gates only let their own color through.",
+  "ar": "كل باب لا يمرّر إلا لونه."
+ },
+ "hint": {
+  "en": "Turn blue to pass the blue door, then turn red for the goal.",
+  "ar": "صِر أزرق لتعبر الباب الأزرق، ثم أحمر للهدف."
+ },
+ "star": {
+  "pos": [
+   741.0,
+   366.0
+  ]
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c5_12",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Deep Space",
+  "ar": "الفضاء العميق"
+ },
+ "difficulty": "hard",
+ "chapter": 5,
+ "number": 12,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "green"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    580,
+    270
+   ],
+   "size": [
+    760,
+    540
+   ],
+   "rotation": 0,
+   "gravity": [
+    0,
+    0
+   ],
+   "drag": 0.0
+  },
+  {
+   "id": "KC200",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     200,
+     0
+    ],
+    [
+     960,
+     0
+    ],
+    [
+     960,
+     14
+    ],
+    [
+     200,
+     14
+    ]
+   ]
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    860,
+    150
+   ],
+   "innerRadius": 34,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 590,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 510
+ },
+ "tip": {
+  "en": "Without gravity, balls fly straight and slide along your lines.",
+  "ar": "بلا جاذبية تطير الكرات بخط مستقيم وتنزلق على خطوطك."
+ },
+ "hint": {
+  "en": "Draw one long bowl that turns the balls up toward the circle.",
+  "ar": "ارسم قوسًا طويلًا يدير الكرات صعودًا نحو الدائرة."
+ },
+ "star": {
+  "pos": [
+   730.0,
+   228.0
+  ]
+ }
+}

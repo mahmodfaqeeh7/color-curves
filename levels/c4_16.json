@@ -1,0 +1,177 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c4_16",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Lava Slalom",
+  "ar": "تعرّج الحمم"
+ },
+ "difficulty": "expert",
+ "chapter": 4,
+ "number": 16,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "LV1",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    300,
+    105
+   ],
+   "size": [
+    40,
+    210
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV2",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    520,
+    145
+   ],
+   "size": [
+    40,
+    290
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV3",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    740,
+    105
+   ],
+   "size": [
+    40,
+    210
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV4",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    410,
+    440
+   ],
+   "size": [
+    40,
+    200
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV5",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    630,
+    470
+   ],
+   "size": [
+    40,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV0",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    380.0,
+    520
+   ],
+   "size": [
+    760,
+    40
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    860,
+    440
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 860,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 810
+ },
+ "tip": {
+  "en": "Keep your line away from the heat on both sides.",
+  "ar": "أبعد خطك عن الحرارة من الجهتين."
+ },
+ "hint": {
+  "en": "One long line: under, over, under, over.",
+  "ar": "خط واحد طويل: من تحت، من فوق، من تحت، من فوق."
+ },
+ "star": {
+  "pos": [
+   646.0,
+   356.0
+  ]
+ }
+}

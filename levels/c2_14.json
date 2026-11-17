@@ -1,0 +1,126 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_14",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Up Draft",
+  "ar": "تيار صاعد"
+ },
+ "difficulty": "medium",
+ "chapter": 2,
+ "number": 14,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0.0,
+  630.0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75.0,
+    450.0
+   ],
+   "velocity": [
+    300.0,
+    0.0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    495.0,
+    277.5
+   ],
+   "size": [
+    180.0,
+    495.0
+   ],
+   "rotation": 0,
+   "gravity": [
+    0.0,
+    -630.0
+   ],
+   "drag": 0.0
+  },
+  {
+   "id": "N1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    540.0,
+    33.0
+   ],
+   "size": [
+    390.0,
+    24.0
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    840.0,
+    180.0
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 620,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 490
+ },
+ "tip": {
+  "en": "Inside this zone, gravity points up.",
+  "ar": "داخل هذه المنطقة، الجاذبية نحو الأعلى."
+ },
+ "hint": {
+  "en": "Let the balls rise to the ceiling, then guide them right.",
+  "ar": "دع الكرات ترتفع إلى السقف، ثم وجّهها يمينًا."
+ },
+ "star": {
+  "pos": [
+   458.0,
+   470.0
+  ]
+ }
+}

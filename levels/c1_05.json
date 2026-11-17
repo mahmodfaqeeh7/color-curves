@@ -1,0 +1,104 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_05",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Pentagon Angle",
+  "ar": "زاوية المخمّس"
+ },
+ "difficulty": "easy",
+ "chapter": 1,
+ "number": 5,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    60,
+    70
+   ],
+   "velocity": [
+    160,
+    -40
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 7,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "regular",
+   "center": [
+    330,
+    210
+   ],
+   "radius": 38,
+   "sides": 5,
+   "rotation": 0,
+   "color": "green"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    455,
+    315
+   ],
+   "innerRadius": 30,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 4,
+  "maxInkLength": null,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1
+ },
+ "tip": {
+  "en": "Shapes deflect balls by their angle. Color only decides the paint.",
+  "ar": "الأشكال تحرف الكرات حسب زاويتها. اللون يحدد الطلاء فقط."
+ },
+ "hint": {
+  "en": "Roll the balls onto the pentagon's upper face.",
+  "ar": "دحرج الكرات على الوجه العلوي للمخمّس."
+ },
+ "star": {
+  "pos": [
+   401.0,
+   219.0
+  ]
+ }
+}

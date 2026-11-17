@@ -1,0 +1,126 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_16",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Float Room",
+  "ar": "غرفة الطفو"
+ },
+ "difficulty": "medium",
+ "chapter": 2,
+ "number": 16,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0.0,
+  630.0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75.0,
+    165.0
+   ],
+   "velocity": [
+    390.0,
+    -60.0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    600.0,
+    270.0
+   ],
+   "size": [
+    480.0,
+    450.0
+   ],
+   "rotation": 0,
+   "gravity": [
+    0.0,
+    0.0
+   ],
+   "drag": 0.3
+  },
+  {
+   "id": "N1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    600.0,
+    517.5
+   ],
+   "size": [
+    480.0,
+    21.0
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    750.0,
+    120.0
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 150,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 100
+ },
+ "tip": {
+  "en": "Zero gravity: balls fly straight. Rails work like mirrors.",
+  "ar": "لا جاذبية هنا: الكرات تطير بخط مستقيم والخطوط تعمل كالمرايا."
+ },
+ "hint": {
+  "en": "Place one angled rail to bounce the balls up into the goal.",
+  "ar": "ضع خطًا مائلًا واحدًا لترتد الكرات للأعلى نحو الهدف."
+ },
+ "star": {
+  "pos": [
+   791.0,
+   291.0
+  ]
+ }
+}

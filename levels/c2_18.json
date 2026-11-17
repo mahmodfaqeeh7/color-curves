@@ -1,0 +1,217 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_18",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Door Sorter",
+  "ar": "فرز الأبواب"
+ },
+ "difficulty": "hard",
+ "chapter": 2,
+ "number": 18,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "X1",
+   "type": "splitter",
+   "shape": "regular",
+   "center": [
+    360,
+    250
+   ],
+   "radius": 36,
+   "sides": 3,
+   "rotation": 90
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    560,
+    215
+   ],
+   "size": [
+    130,
+    20
+   ],
+   "rotation": 6,
+   "color": "red"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    540,
+    350
+   ],
+   "size": [
+    140,
+    20
+   ],
+   "rotation": 6,
+   "color": "yellow"
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    50
+   ],
+   "size": [
+    24,
+    100
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    760,
+    180
+   ],
+   "size": [
+    24,
+    160
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    280
+   ],
+   "size": [
+    24,
+    40
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G2",
+   "type": "gate",
+   "color": "yellow",
+   "shape": "rect",
+   "center": [
+    760,
+    380
+   ],
+   "size": [
+    24,
+    160
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W3",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    500
+   ],
+   "size": [
+    24,
+    80
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    875,
+    270
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  },
+  {
+   "id": "C2",
+   "center": [
+    880,
+    400
+   ],
+   "innerRadius": 34,
+   "targetColor": "yellow",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 770,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 670
+ },
+ "tip": {
+  "en": "Each door only opens for its own color.",
+  "ar": "كل باب لا يُفتح إلا للونه."
+ },
+ "hint": {
+  "en": "Split, then paint each copy to match the door it's heading for.",
+  "ar": "اقسم الكرة، ثم لوّن كل نسخة بلون الباب الذي تتجه إليه."
+ },
+ "star": {
+  "pos": [
+   454.0,
+   188.0
+  ]
+ }
+}

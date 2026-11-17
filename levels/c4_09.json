@@ -1,0 +1,150 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c4_09",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Break Through",
+  "ar": "اختراق"
+ },
+ "difficulty": "medium",
+ "chapter": 4,
+ "number": 9,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 10,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "S1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    640,
+    384
+   ],
+   "size": [
+    620,
+    16
+   ],
+   "rotation": 8
+  },
+  {
+   "id": "GL1",
+   "type": "glass",
+   "shape": "rect",
+   "center": [
+    620,
+    318
+   ],
+   "size": [
+    14,
+    120
+   ],
+   "rotation": 0,
+   "hits": 3
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    620,
+    129
+   ],
+   "size": [
+    14,
+    258
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV0",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    160.0,
+    520
+   ],
+   "size": [
+    320,
+    40
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    870,
+    395
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 90,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 40
+ },
+ "tip": {
+  "en": "Some balls must be spent to break the glass.",
+  "ar": "لا بد من التضحية ببعض الكرات لكسر الزجاج."
+ },
+ "hint": {
+  "en": "Keep the balls coming. The glass gives way on the third hit.",
+  "ar": "استمر بإرسال الكرات، فالزجاج ينكسر عند الضربة الثالثة."
+ },
+ "star": {
+  "pos": [
+   378.0,
+   307.0
+  ]
+ }
+}

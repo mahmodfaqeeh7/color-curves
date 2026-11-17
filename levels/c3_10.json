@@ -1,0 +1,516 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_10",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Locked Pair",
+  "ar": "الزوج المقفل"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 10,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    80
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  },
+  {
+   "id": "L2",
+   "pos": [
+    75,
+    300
+   ],
+   "velocity": [
+    240,
+    -80
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 7,
+   "interval": 0.55,
+   "delay": 6.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    60
+   ],
+   "size": [
+    24,
+    120
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    760,
+    210
+   ],
+   "size": [
+    24,
+    180
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    760,
+    330
+   ],
+   "size": [
+    24,
+    60
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G2",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    480,
+    410
+   ],
+   "size": [
+    24,
+    180
+   ],
+   "rotation": 90
+  },
+  {
+   "id": "W3",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    380,
+    470
+   ],
+   "size": [
+    24,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W4",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    580,
+    470
+   ],
+   "size": [
+    24,
+    140
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WB",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    952,
+    200
+   ],
+   "size": [
+    16,
+    400
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "SH",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    880,
+    315
+   ],
+   "size": [
+    150,
+    14
+   ],
+   "rotation": -10
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     817.4,
+     247.5
+    ],
+    [
+     827.6,
+     234.7
+    ],
+    [
+     841.1,
+     225.4
+    ],
+    [
+     856.8,
+     220.6
+    ],
+    [
+     873.2,
+     220.6
+    ],
+    [
+     888.9,
+     225.4
+    ],
+    [
+     902.4,
+     234.7
+    ],
+    [
+     912.6,
+     247.5
+    ],
+    [
+     918.6,
+     262.8
+    ],
+    [
+     919.8,
+     279.1
+    ],
+    [
+     916.2,
+     295.1
+    ],
+    [
+     908.0,
+     309.3
+    ],
+    [
+     896.0,
+     320.4
+    ],
+    [
+     881.2,
+     327.6
+    ],
+    [
+     865.0,
+     330.0
+    ],
+    [
+     865.0,
+     318.0
+    ],
+    [
+     877.7,
+     316.1
+    ],
+    [
+     889.2,
+     310.5
+    ],
+    [
+     898.6,
+     301.8
+    ],
+    [
+     905.0,
+     290.7
+    ],
+    [
+     907.9,
+     278.2
+    ],
+    [
+     906.9,
+     265.4
+    ],
+    [
+     902.2,
+     253.5
+    ],
+    [
+     894.2,
+     243.5
+    ],
+    [
+     883.7,
+     236.3
+    ],
+    [
+     871.4,
+     232.5
+    ],
+    [
+     858.6,
+     232.5
+    ],
+    [
+     846.3,
+     236.3
+    ],
+    [
+     835.8,
+     243.5
+    ],
+    [
+     827.8,
+     253.5
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "id": "CUP_C2_0",
+   "points": [
+    [
+     535.0,
+     480.0
+    ],
+    [
+     533.1,
+     494.2
+    ],
+    [
+     527.6,
+     507.5
+    ],
+    [
+     518.9,
+     518.9
+    ],
+    [
+     507.5,
+     527.6
+    ],
+    [
+     494.2,
+     533.1
+    ],
+    [
+     480.0,
+     535.0
+    ],
+    [
+     465.8,
+     533.1
+    ],
+    [
+     452.5,
+     527.6
+    ],
+    [
+     441.1,
+     518.9
+    ],
+    [
+     432.4,
+     507.5
+    ],
+    [
+     426.9,
+     494.2
+    ],
+    [
+     425.0,
+     480.0
+    ],
+    [
+     437.0,
+     480.0
+    ],
+    [
+     438.5,
+     491.1
+    ],
+    [
+     442.8,
+     501.5
+    ],
+    [
+     449.6,
+     510.4
+    ],
+    [
+     458.5,
+     517.2
+    ],
+    [
+     468.9,
+     521.5
+    ],
+    [
+     480.0,
+     523.0
+    ],
+    [
+     491.1,
+     521.5
+    ],
+    [
+     501.5,
+     517.2
+    ],
+    [
+     510.4,
+     510.4
+    ],
+    [
+     517.2,
+     501.5
+    ],
+    [
+     521.5,
+     491.1
+    ],
+    [
+     523.0,
+     480.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    172.0,
+    157.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    368.0,
+    73.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    872.0,
+    465.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    865,
+    275
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  },
+  {
+   "id": "C2",
+   "center": [
+    480,
+    480
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5,
+   "after": "C1"
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 1180,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 1040
+ },
+ "tip": {
+  "en": "Two launchers, two doors, and an order.",
+  "ar": "مدفعان وبابان وترتيب."
+ },
+ "hint": {
+  "en": "Red goes right over the blue door. Blue drops through it later.",
+  "ar": "الأحمر يذهب يمينًا فوق الباب الأزرق. والأزرق يسقط عبره لاحقًا."
+ },
+ "star": {
+  "pos": [
+   794.0,
+   370.0
+  ]
+ }
+}

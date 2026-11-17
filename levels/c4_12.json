@@ -1,0 +1,153 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c4_12",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Belt and Door",
+  "ar": "السير والباب"
+ },
+ "difficulty": "medium",
+ "chapter": 4,
+ "number": 12,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    120,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "green"
+   ],
+   "count": 10,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "B1",
+   "type": "conveyor",
+   "shape": "rect",
+   "center": [
+    420,
+    330
+   ],
+   "size": [
+    380,
+    18
+   ],
+   "rotation": -8,
+   "speed": 220
+  },
+  {
+   "id": "D1",
+   "type": "door",
+   "shape": "rect",
+   "center": [
+    626,
+    248
+   ],
+   "size": [
+    16,
+    112
+   ],
+   "rotation": 0,
+   "period": 3.0,
+   "open": 1.3,
+   "phase": 0.0
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    626,
+    96
+   ],
+   "size": [
+    16,
+    192
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV0",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    480.0,
+    520
+   ],
+   "size": [
+    960,
+    40
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    880,
+    330
+   ],
+   "innerRadius": 34,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 550,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 430
+ },
+ "tip": {
+  "en": "The belt keeps pushing while the door is closed.",
+  "ar": "السير يواصل الدفع والباب مغلق."
+ },
+ "hint": {
+  "en": "Feed the belt, then build a path from the door to the circle.",
+  "ar": "أوصل الكرات إلى السير، ثم ابنِ مسارًا من الباب إلى الدائرة."
+ },
+ "star": {
+  "pos": [
+   390.0,
+   302.0
+  ]
+ }
+}

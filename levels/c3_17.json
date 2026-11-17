@@ -1,0 +1,321 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_17",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Power Vault",
+  "ar": "خزنة الطلقة"
+ },
+ "difficulty": "expert",
+ "chapter": 3,
+ "number": 17,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1500,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    60,
+    480
+   ],
+   "velocity": [
+    600,
+    -700
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue",
+    "red"
+   ],
+   "count": 12,
+   "interval": 0.55,
+   "delay": 0.0,
+   "power": true
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "K1",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     700,
+     200
+    ],
+    [
+     720,
+     200
+    ],
+    [
+     720,
+     460
+    ],
+    [
+     700,
+     460
+    ]
+   ]
+  },
+  {
+   "id": "K2",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     700,
+     440
+    ],
+    [
+     960,
+     440
+    ],
+    [
+     960,
+     460
+    ],
+    [
+     700,
+     460
+    ]
+   ]
+  },
+  {
+   "id": "K3",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     940,
+     200
+    ],
+    [
+     960,
+     200
+    ],
+    [
+     960,
+     440
+    ],
+    [
+     940,
+     440
+    ]
+   ]
+  },
+  {
+   "id": "S1",
+   "type": "switch",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    830,
+    190
+   ],
+   "size": [
+    220,
+    20
+   ],
+   "rotation": 0,
+   "move": [
+    240,
+    0
+   ],
+   "speed": 500
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     885.0,
+     350.0
+    ],
+    [
+     883.1,
+     364.2
+    ],
+    [
+     877.6,
+     377.5
+    ],
+    [
+     868.9,
+     388.9
+    ],
+    [
+     857.5,
+     397.6
+    ],
+    [
+     844.2,
+     403.1
+    ],
+    [
+     830.0,
+     405.0
+    ],
+    [
+     815.8,
+     403.1
+    ],
+    [
+     802.5,
+     397.6
+    ],
+    [
+     791.1,
+     388.9
+    ],
+    [
+     782.4,
+     377.5
+    ],
+    [
+     792.8,
+     371.5
+    ],
+    [
+     799.6,
+     380.4
+    ],
+    [
+     808.5,
+     387.2
+    ],
+    [
+     818.9,
+     391.5
+    ],
+    [
+     830.0,
+     393.0
+    ],
+    [
+     841.1,
+     391.5
+    ],
+    [
+     851.5,
+     387.2
+    ],
+    [
+     860.4,
+     380.4
+    ],
+    [
+     867.2,
+     371.5
+    ],
+    [
+     871.5,
+     361.1
+    ],
+    [
+     873.0,
+     350.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    396.0,
+    241.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    172.0,
+    297.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    592.0,
+    157.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    830,
+    350
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 150,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1,
+  "parInk": 100
+ },
+ "tip": {
+  "en": "This power launcher fires blue, then red, then blue...",
+  "ar": "هذا المدفع القوي يطلق أزرق ثم أحمر ثم أزرق..."
+ },
+ "hint": {
+  "en": "Bring the shot down onto the lid. Blue slides it open; red drops in.",
+  "ar": "أنزل الطلقة على الغطاء. الأزرق يفتحه، والأحمر يسقط داخله."
+ },
+ "star": {
+  "pos": [
+   779.0,
+   257.0
+  ]
+ }
+}

@@ -1,0 +1,376 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_18",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Up and Over",
+  "ar": "للأعلى وفوق"
+ },
+ "difficulty": "expert",
+ "chapter": 3,
+ "number": 18,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    460
+   ],
+   "velocity": [
+    260,
+    -200
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 7,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    320,
+    270
+   ],
+   "size": [
+    180,
+    540
+   ],
+   "rotation": 0,
+   "gravity": [
+    0,
+    -630
+   ],
+   "drag": 0.0
+  },
+  {
+   "id": "KC230",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     230,
+     0
+    ],
+    [
+     410,
+     0
+    ],
+    [
+     410,
+     14
+    ],
+    [
+     230,
+     14
+    ]
+   ]
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    480,
+    120
+   ],
+   "size": [
+    120,
+    20
+   ],
+   "rotation": 8,
+   "color": "blue"
+  },
+  {
+   "id": "F1",
+   "type": "flip",
+   "shape": "rect",
+   "center": [
+    590,
+    300
+   ],
+   "size": [
+    110,
+    14
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    700,
+    110
+   ],
+   "size": [
+    24,
+    220
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    700,
+    380
+   ],
+   "size": [
+    24,
+    320
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WB",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    952,
+    380
+   ],
+   "size": [
+    16,
+    320
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     927.5,
+     422.4
+    ],
+    [
+     940.3,
+     432.6
+    ],
+    [
+     949.6,
+     446.1
+    ],
+    [
+     954.4,
+     461.8
+    ],
+    [
+     954.4,
+     478.2
+    ],
+    [
+     949.6,
+     493.9
+    ],
+    [
+     940.3,
+     507.4
+    ],
+    [
+     927.5,
+     517.6
+    ],
+    [
+     912.2,
+     523.6
+    ],
+    [
+     895.9,
+     524.8
+    ],
+    [
+     879.9,
+     521.2
+    ],
+    [
+     865.7,
+     513.0
+    ],
+    [
+     854.6,
+     501.0
+    ],
+    [
+     847.4,
+     486.2
+    ],
+    [
+     845.0,
+     470.0
+    ],
+    [
+     857.0,
+     470.0
+    ],
+    [
+     858.9,
+     482.7
+    ],
+    [
+     864.5,
+     494.2
+    ],
+    [
+     873.2,
+     503.6
+    ],
+    [
+     884.3,
+     510.0
+    ],
+    [
+     896.8,
+     512.9
+    ],
+    [
+     909.6,
+     511.9
+    ],
+    [
+     921.5,
+     507.2
+    ],
+    [
+     931.5,
+     499.2
+    ],
+    [
+     938.7,
+     488.7
+    ],
+    [
+     942.5,
+     476.4
+    ],
+    [
+     942.5,
+     463.6
+    ],
+    [
+     938.7,
+     451.3
+    ],
+    [
+     931.5,
+     440.8
+    ],
+    [
+     921.5,
+     432.8
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    592.0,
+    73.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    816.0,
+    325.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    620.0,
+    381.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    900,
+    470
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 460,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 420
+ },
+ "tip": {
+  "en": "Up, across, flip, down.",
+  "ar": "للأعلى، عبر، انقلاب، للأسفل."
+ },
+ "hint": {
+  "en": "Leave the updraft onto the blue slab, then drop through the door.",
+  "ar": "اخرج من التيار الصاعد إلى اللوح الأزرق، ثم اسقط عبر الباب."
+ },
+ "star": {
+  "pos": [
+   295.0,
+   253.0
+  ]
+ }
+}

@@ -1,0 +1,145 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_06",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Split Paths",
+  "ar": "طرق منقسمة"
+ },
+ "difficulty": "easy",
+ "chapter": 2,
+ "number": 6,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0.0,
+  630.0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75.0,
+    105.0
+   ],
+   "velocity": [
+    255.0,
+    0.0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "X1",
+   "type": "splitter",
+   "shape": "regular",
+   "center": [
+    393.0,
+    252.0
+   ],
+   "radius": 36.0,
+   "sides": 3,
+   "rotation": 90
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    615.0,
+    300.0
+   ],
+   "size": [
+    150.0,
+    21.0
+   ],
+   "rotation": 6,
+   "color": "red"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    600.0,
+    435.0
+   ],
+   "size": [
+    165.0,
+    21.0
+   ],
+   "rotation": 6,
+   "color": "yellow"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    877.5,
+    352.5
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  },
+  {
+   "id": "C2",
+   "center": [
+    877.5,
+    495.0
+   ],
+   "innerRadius": 34,
+   "targetColor": "yellow",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 970,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 710
+ },
+ "tip": {
+  "en": "The prism turns one ball into two.",
+  "ar": "المنشور يحوّل الكرة الواحدة إلى كرتين."
+ },
+ "hint": {
+  "en": "Send one copy over red and the other over yellow.",
+  "ar": "أرسل نسخة فوق الأحمر والأخرى فوق الأصفر."
+ },
+ "star": {
+  "pos": [
+   465.0,
+   207.0
+  ]
+ }
+}

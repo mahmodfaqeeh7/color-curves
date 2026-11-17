@@ -1,0 +1,291 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_04",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Deep Float",
+  "ar": "طفو عميق"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 4,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    260,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "red"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    605,
+    270
+   ],
+   "size": [
+    710,
+    540
+   ],
+   "rotation": 0,
+   "gravity": [
+    0,
+    0
+   ],
+   "drag": 0.0
+  },
+  {
+   "id": "K1",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     600,
+     0
+    ],
+    [
+     640,
+     0
+    ],
+    [
+     640,
+     300
+    ],
+    [
+     600,
+     300
+    ]
+   ]
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    560,
+    488
+   ],
+   "size": [
+    110,
+    16
+   ],
+   "rotation": 0,
+   "color": "blue"
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     805.0,
+     110.0
+    ],
+    [
+     806.9,
+     95.8
+    ],
+    [
+     812.4,
+     82.5
+    ],
+    [
+     821.1,
+     71.1
+    ],
+    [
+     832.5,
+     62.4
+    ],
+    [
+     845.8,
+     56.9
+    ],
+    [
+     860.0,
+     55.0
+    ],
+    [
+     874.2,
+     56.9
+    ],
+    [
+     887.5,
+     62.4
+    ],
+    [
+     898.9,
+     71.1
+    ],
+    [
+     907.6,
+     82.5
+    ],
+    [
+     913.1,
+     95.8
+    ],
+    [
+     915.0,
+     110.0
+    ],
+    [
+     913.1,
+     124.2
+    ],
+    [
+     907.6,
+     137.5
+    ],
+    [
+     897.2,
+     131.5
+    ],
+    [
+     901.5,
+     121.1
+    ],
+    [
+     903.0,
+     110.0
+    ],
+    [
+     901.5,
+     98.9
+    ],
+    [
+     897.2,
+     88.5
+    ],
+    [
+     890.4,
+     79.6
+    ],
+    [
+     881.5,
+     72.8
+    ],
+    [
+     871.1,
+     68.5
+    ],
+    [
+     860.0,
+     67.0
+    ],
+    [
+     848.9,
+     68.5
+    ],
+    [
+     838.5,
+     72.8
+    ],
+    [
+     829.6,
+     79.6
+    ],
+    [
+     822.8,
+     88.5
+    ],
+    [
+     818.5,
+     98.9
+    ],
+    [
+     817.0,
+     110.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    172.0,
+    213.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    860,
+    110
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 830,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 730
+ },
+ "tip": {
+  "en": "No gravity here: balls fly straight until a rail turns them.",
+  "ar": "لا جاذبية هنا: الكرات تطير مستقيمة حتى يديرها خط."
+ },
+ "hint": {
+  "en": "Turn blue on the low slab, then bounce up behind the wall.",
+  "ar": "صِر أزرق على اللوح السفلي، ثم ارتد للأعلى خلف الجدار."
+ },
+ "star": {
+  "pos": [
+   781.0,
+   340.0
+  ]
+ }
+}

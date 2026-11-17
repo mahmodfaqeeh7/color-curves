@@ -1,0 +1,323 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_03",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Grand Curve",
+  "ar": "المنحنى الكبير"
+ },
+ "difficulty": "expert",
+ "chapter": 3,
+ "number": 3,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    250,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 7,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "K1",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     330,
+     190
+    ],
+    [
+     620,
+     235
+    ],
+    [
+     620,
+     420
+    ],
+    [
+     330,
+     420
+    ]
+   ]
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    754,
+    385
+   ],
+   "size": [
+    16,
+    150
+   ],
+   "rotation": 0,
+   "color": "green"
+  },
+  {
+   "id": "K2",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     0,
+     380
+    ],
+    [
+     240,
+     380
+    ],
+    [
+     240,
+     400
+    ],
+    [
+     0,
+     400
+    ]
+   ]
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     147.5,
+     522.6
+    ],
+    [
+     130.2,
+     529.0
+    ],
+    [
+     111.8,
+     529.4
+    ],
+    [
+     94.3,
+     523.6
+    ],
+    [
+     79.7,
+     512.4
+    ],
+    [
+     69.6,
+     497.0
+    ],
+    [
+     65.2,
+     479.1
+    ],
+    [
+     66.9,
+     460.8
+    ],
+    [
+     74.6,
+     444.0
+    ],
+    [
+     87.3,
+     430.7
+    ],
+    [
+     103.8,
+     422.4
+    ],
+    [
+     122.1,
+     420.0
+    ],
+    [
+     140.1,
+     423.8
+    ],
+    [
+     155.9,
+     433.3
+    ],
+    [
+     167.6,
+     447.5
+    ],
+    [
+     157.2,
+     453.5
+    ],
+    [
+     148.0,
+     442.4
+    ],
+    [
+     135.7,
+     435.0
+    ],
+    [
+     121.6,
+     432.0
+    ],
+    [
+     107.3,
+     433.9
+    ],
+    [
+     94.5,
+     440.4
+    ],
+    [
+     84.5,
+     450.8
+    ],
+    [
+     78.5,
+     463.9
+    ],
+    [
+     77.1,
+     478.2
+    ],
+    [
+     80.6,
+     492.2
+    ],
+    [
+     88.5,
+     504.2
+    ],
+    [
+     99.9,
+     513.0
+    ],
+    [
+     113.6,
+     517.5
+    ],
+    [
+     128.0,
+     517.3
+    ],
+    [
+     141.5,
+     512.2
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    480.0,
+    157.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    648.0,
+    185.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    648.0,
+    465.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    120,
+    475
+   ],
+   "innerRadius": 34,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 930,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 880
+ },
+ "tip": {
+  "en": "Paint green at the far wall. The long way round is the only way.",
+  "ar": "تلوّن بالأخضر عند الجدار البعيد. الطريق الطويل هو الطريق الوحيد."
+ },
+ "hint": {
+  "en": "Roll over the rock, turn around at the far side and come back underneath.",
+  "ar": "تدحرج فوق الصخرة، استدر في الطرف البعيد وعُد من تحتها."
+ },
+ "star": {
+  "pos": [
+   644.0,
+   235.0
+  ]
+ }
+}

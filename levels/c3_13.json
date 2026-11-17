@@ -1,0 +1,348 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_13",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Flip Lock",
+  "ar": "قفل القلب"
+ },
+ "difficulty": "expert",
+ "chapter": 3,
+ "number": 13,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "green"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "F1",
+   "type": "flip",
+   "shape": "rect",
+   "center": [
+    330,
+    480
+   ],
+   "size": [
+    140,
+    14
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    520,
+    60
+   ],
+   "size": [
+    160,
+    20
+   ],
+   "rotation": -8,
+   "color": "red"
+  },
+  {
+   "id": "KC600",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     600,
+     0
+    ],
+    [
+     960,
+     0
+    ],
+    [
+     960,
+     14
+    ],
+    [
+     600,
+     14
+    ]
+   ]
+  },
+  {
+   "id": "S1",
+   "type": "switch",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    700,
+    150
+   ],
+   "size": [
+    24,
+    270
+   ],
+   "rotation": 0,
+   "move": [
+    0,
+    -290
+   ],
+   "speed": 450
+  },
+  {
+   "id": "F2",
+   "type": "flip",
+   "shape": "rect",
+   "center": [
+    790,
+    34
+   ],
+   "size": [
+    100,
+    14
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     887.5,
+     422.4
+    ],
+    [
+     900.3,
+     432.6
+    ],
+    [
+     909.6,
+     446.1
+    ],
+    [
+     914.4,
+     461.8
+    ],
+    [
+     914.4,
+     478.2
+    ],
+    [
+     909.6,
+     493.9
+    ],
+    [
+     900.3,
+     507.4
+    ],
+    [
+     887.5,
+     517.6
+    ],
+    [
+     872.2,
+     523.6
+    ],
+    [
+     855.9,
+     524.8
+    ],
+    [
+     839.9,
+     521.2
+    ],
+    [
+     825.7,
+     513.0
+    ],
+    [
+     814.6,
+     501.0
+    ],
+    [
+     807.4,
+     486.2
+    ],
+    [
+     805.0,
+     470.0
+    ],
+    [
+     817.0,
+     470.0
+    ],
+    [
+     818.9,
+     482.7
+    ],
+    [
+     824.5,
+     494.2
+    ],
+    [
+     833.2,
+     503.6
+    ],
+    [
+     844.3,
+     510.0
+    ],
+    [
+     856.8,
+     512.9
+    ],
+    [
+     869.6,
+     511.9
+    ],
+    [
+     881.5,
+     507.2
+    ],
+    [
+     891.5,
+     499.2
+    ],
+    [
+     898.7,
+     488.7
+    ],
+    [
+     902.5,
+     476.4
+    ],
+    [
+     902.5,
+     463.6
+    ],
+    [
+     898.7,
+     451.3
+    ],
+    [
+     891.5,
+     440.8
+    ],
+    [
+     881.5,
+     432.8
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    396.0,
+    241.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    592.0,
+    185.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    760.0,
+    241.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    860,
+    470
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 710,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 660
+ },
+ "tip": {
+  "en": "Up to the key, down to the goal.",
+  "ar": "للأعلى نحو المفتاح، وللأسفل نحو الهدف."
+ },
+ "hint": {
+  "en": "Fall up onto the red slab, roll into the switch, then flip back down.",
+  "ar": "اسقط للأعلى إلى اللوح الأحمر، تدحرج نحو الجدار المنزلق، ثم انقلب للأسفل."
+ },
+ "star": {
+  "pos": [
+   817.0,
+   289.0
+  ]
+ }
+}

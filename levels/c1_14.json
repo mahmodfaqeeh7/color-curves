@@ -1,0 +1,120 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_14",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Every Ball Counts",
+  "ar": "كل كرة مهمة"
+ },
+ "difficulty": "medium",
+ "chapter": 1,
+ "number": 14,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    50,
+    60
+   ],
+   "velocity": [
+    160,
+    -20
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 5,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    320,
+    340
+   ],
+   "size": [
+    160,
+    24
+   ],
+   "rotation": 0,
+   "color": "red"
+  },
+  {
+   "id": "N1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    470,
+    250
+   ],
+   "size": [
+    20,
+    80
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    560,
+    300
+   ],
+   "innerRadius": 28,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 3,
+  "maxInkLength": null,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2
+ },
+ "tip": {
+  "en": "Exactly five balls. You can't lose a single one.",
+  "ar": "خمس كرات بالضبط. لا يمكنك خسارة أي واحدة."
+ },
+ "hint": {
+  "en": "Bounce on the red floor, then lift the balls to the right.",
+  "ar": "ارتد عن الأرضية الحمراء، ثم ارفع الكرات إلى اليمين."
+ },
+ "star": {
+  "pos": [
+   441.0,
+   303.0
+  ]
+ }
+}

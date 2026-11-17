@@ -1,0 +1,171 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c4_14",
+ "revision": 1,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Hot Air",
+  "ar": "هواء ساخن"
+ },
+ "difficulty": "hard",
+ "chapter": 4,
+ "number": 14,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "green"
+   ],
+   "count": 9,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "F1",
+   "type": "fan",
+   "shape": "rect",
+   "center": [
+    275,
+    300
+   ],
+   "size": [
+    90,
+    400
+   ],
+   "rotation": 0,
+   "push": [
+    0,
+    -820
+   ]
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    335,
+    420
+   ],
+   "size": [
+    20,
+    240
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "F2",
+   "type": "fan",
+   "shape": "rect",
+   "center": [
+    560,
+    330
+   ],
+   "size": [
+    100,
+    400
+   ],
+   "rotation": 0,
+   "push": [
+    0,
+    -1000
+   ]
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    622,
+    420
+   ],
+   "size": [
+    20,
+    240
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "LV0",
+   "type": "lava",
+   "shape": "rect",
+   "center": [
+    480.0,
+    520
+   ],
+   "size": [
+    960,
+    40
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    850,
+    430
+   ],
+   "innerRadius": 34,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 540,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 460
+ },
+ "tip": {
+  "en": "Two walls, two fans.",
+  "ar": "جداران ومروحتان."
+ },
+ "hint": {
+  "en": "Feed each fan gently and catch the balls after each hop.",
+  "ar": "أدخل الكرات إلى كل مروحة بهدوء، والتقطها بعد كل قفزة."
+ },
+ "star": {
+  "pos": [
+   437.0,
+   162.0
+  ]
+ }
+}

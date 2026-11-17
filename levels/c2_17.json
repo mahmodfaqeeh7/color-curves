@@ -1,0 +1,107 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_17",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Sideways",
+  "ar": "جانبيًا"
+ },
+ "difficulty": "medium",
+ "chapter": 2,
+ "number": 17,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  630.0,
+  0.0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    90.0,
+    90.0
+   ],
+   "velocity": [
+    0.0,
+    180.0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "N1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    630.0,
+    360.0
+   ],
+   "size": [
+    45.0,
+    210.0
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    870.0,
+    450.0
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 560,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 440
+ },
+ "tip": {
+  "en": "In this level, gravity pulls to the right.",
+  "ar": "في هذه المرحلة، الجاذبية تسحب نحو اليمين."
+ },
+ "hint": {
+  "en": "Use rails as floors that lead around the grey wall.",
+  "ar": "استخدم الخطوط كأرضيات تدور حول الجدار الرمادي."
+ },
+ "star": {
+  "pos": [
+   834.0,
+   331.0
+  ]
+ }
+}

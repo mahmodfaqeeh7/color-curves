@@ -1,0 +1,119 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c1_15",
+ "revision": 1,
+ "rulesVersion": 1,
+ "title": {
+  "en": "Short on Ink",
+  "ar": "الحبر قليل"
+ },
+ "difficulty": "medium",
+ "chapter": 1,
+ "number": 15,
+ "board": {
+  "width": 640,
+  "height": 360
+ },
+ "gravity": [
+  0,
+  420
+ ],
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 45.0,
+ "ballLifetime": 20.0,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    50,
+    60
+   ],
+   "velocity": [
+    170,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    210,
+    225
+   ],
+   "size": [
+    80,
+    18
+   ],
+   "rotation": 20,
+   "color": "green"
+  },
+  {
+   "id": "P2",
+   "type": "painter",
+   "shape": "regular",
+   "center": [
+    400,
+    140
+   ],
+   "radius": 30,
+   "sides": 5,
+   "rotation": 36,
+   "color": "red"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    520,
+    320
+   ],
+   "innerRadius": 28,
+   "targetColor": "green",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 3,
+  "maxInkLength": 300,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 1
+ },
+ "tip": {
+  "en": "New: an ink budget limits the total length of your rails.",
+  "ar": "جديد: كمية الحبر تحدد الطول الكلي لخطوطك."
+ },
+ "hint": {
+  "en": "The green slab already paints. A short catch line is all you need.",
+  "ar": "اللوح الأخضر يلوّن الكرات أصلًا. خط التقاط قصير هو كل ما تحتاجه."
+ },
+ "star": {
+  "pos": [
+   446.0,
+   272.0
+  ]
+ }
+}

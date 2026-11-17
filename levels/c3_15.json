@@ -1,0 +1,371 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_15",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Float Gate",
+  "ar": "باب الطفو"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 15,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    260,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    270,
+    300
+   ],
+   "size": [
+    120,
+    20
+   ],
+   "rotation": 10,
+   "color": "red"
+  },
+  {
+   "id": "Z1",
+   "type": "zone",
+   "shape": "rect",
+   "center": [
+    640,
+    270
+   ],
+   "size": [
+    640,
+    540
+   ],
+   "rotation": 0,
+   "gravity": [
+    0,
+    0
+   ],
+   "drag": 0.0
+  },
+  {
+   "id": "K1",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     450,
+     150
+    ],
+    [
+     520,
+     150
+    ],
+    [
+     520,
+     540
+    ],
+    [
+     450,
+     540
+    ]
+   ]
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    680,
+    150
+   ],
+   "size": [
+    24,
+    300
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    680,
+    420
+   ],
+   "size": [
+    24,
+    240
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "KC692",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     692,
+     0
+    ],
+    [
+     960,
+     0
+    ],
+    [
+     960,
+     14
+    ],
+    [
+     692,
+     14
+    ]
+   ]
+  },
+  {
+   "id": "WP",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    820,
+    300
+   ],
+   "size": [
+    264,
+    16
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "WB",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    952,
+    150
+   ],
+   "size": [
+    16,
+    300
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     787.5,
+     98.7
+    ],
+    [
+     807.9,
+     91.1
+    ],
+    [
+     829.7,
+     90.7
+    ],
+    [
+     850.4,
+     97.5
+    ],
+    [
+     867.6,
+     110.8
+    ],
+    [
+     879.6,
+     129.0
+    ],
+    [
+     884.8,
+     150.1
+    ],
+    [
+     882.8,
+     171.8
+    ],
+    [
+     873.7,
+     191.6
+    ],
+    [
+     858.6,
+     207.3
+    ],
+    [
+     839.2,
+     217.1
+    ],
+    [
+     817.6,
+     220.0
+    ],
+    [
+     796.3,
+     215.5
+    ],
+    [
+     777.6,
+     204.3
+    ],
+    [
+     763.7,
+     187.5
+    ],
+    [
+     774.1,
+     181.5
+    ],
+    [
+     785.4,
+     195.2
+    ],
+    [
+     800.6,
+     204.3
+    ],
+    [
+     818.0,
+     208.0
+    ],
+    [
+     835.6,
+     205.6
+    ],
+    [
+     851.5,
+     197.6
+    ],
+    [
+     863.8,
+     184.9
+    ],
+    [
+     871.2,
+     168.7
+    ],
+    [
+     872.9,
+     151.0
+    ],
+    [
+     868.6,
+     133.8
+    ],
+    [
+     858.9,
+     119.0
+    ],
+    [
+     844.8,
+     108.1
+    ],
+    [
+     827.9,
+     102.6
+    ],
+    [
+     810.1,
+     102.9
+    ],
+    [
+     793.5,
+     109.1
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    172.0,
+    213.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    820,
+    155
+   ],
+   "innerRadius": 44,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 470,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 390
+ },
+ "tip": {
+  "en": "No gravity past the red slab.",
+  "ar": "لا جاذبية بعد اللوح الأحمر."
+ },
+ "hint": {
+  "en": "Turn the balls upward before the rock, then level them out for the door.",
+  "ar": "وجّه الكرات للأعلى قبل الصخرة، ثم اجعلها مستوية نحو الباب."
+ },
+ "star": {
+  "pos": [
+   621.0,
+   144.0
+  ]
+ }
+}

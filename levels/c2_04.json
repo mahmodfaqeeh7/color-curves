@@ -1,0 +1,142 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_04",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Red Switch",
+  "ar": "المفتاح الأحمر"
+ },
+ "difficulty": "easy",
+ "chapter": 2,
+ "number": 4,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0.0,
+  630.0
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75.0,
+    105.0
+   ],
+   "velocity": [
+    255.0,
+    0.0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "blue"
+   ],
+   "count": 8,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "R1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    375.0,
+    307.5
+   ],
+   "size": [
+    135.0,
+    24.0
+   ],
+   "rotation": 8,
+   "color": "red"
+  },
+  {
+   "id": "S1",
+   "type": "switch",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    630.0,
+    210.0
+   ],
+   "size": [
+    24.0,
+    420.0
+   ],
+   "rotation": 0,
+   "move": [
+    0.0,
+    -270.0
+   ],
+   "speed": 450.0
+  },
+  {
+   "id": "W2",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    630.0,
+    487.5
+   ],
+   "size": [
+    24.0,
+    135.0
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    877.5,
+    457.5
+   ],
+   "innerRadius": 34,
+   "targetColor": "red",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 750,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 540
+ },
+ "tip": {
+  "en": "A red ball slides the red switch wall open.",
+  "ar": "الكرة الحمراء تفتح الجدار المنزلق الأحمر."
+ },
+ "hint": {
+  "en": "Paint the balls red before they reach the wall.",
+  "ar": "لوّن الكرات بالأحمر قبل أن تصل إلى الجدار."
+ },
+ "star": {
+  "pos": [
+   497.0,
+   283.0
+  ]
+ }
+}

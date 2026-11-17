@@ -1,0 +1,312 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c3_05",
+ "revision": 2,
+ "rulesVersion": 3,
+ "title": {
+  "en": "Upside Twice",
+  "ar": "مقلوب مرتين"
+ },
+ "difficulty": "hard",
+ "chapter": 3,
+ "number": 5,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 60,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "green"
+   ],
+   "count": 6,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "F1",
+   "type": "flip",
+   "shape": "rect",
+   "center": [
+    300,
+    470
+   ],
+   "size": [
+    130,
+    14
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "P1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    540,
+    40
+   ],
+   "size": [
+    140,
+    20
+   ],
+   "rotation": 0,
+   "color": "blue"
+  },
+  {
+   "id": "F2",
+   "type": "flip",
+   "shape": "rect",
+   "center": [
+    740,
+    26
+   ],
+   "size": [
+    120,
+    14
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "K1",
+   "type": "rock",
+   "shape": "poly",
+   "points": [
+    [
+     420,
+     300
+    ],
+    [
+     640,
+     300
+    ],
+    [
+     640,
+     540
+    ],
+    [
+     420,
+     540
+    ]
+   ]
+  },
+  {
+   "id": "CUP_C1_0",
+   "points": [
+    [
+     905.0,
+     470.0
+    ],
+    [
+     903.1,
+     484.2
+    ],
+    [
+     897.6,
+     497.5
+    ],
+    [
+     888.9,
+     508.9
+    ],
+    [
+     877.5,
+     517.6
+    ],
+    [
+     864.2,
+     523.1
+    ],
+    [
+     850.0,
+     525.0
+    ],
+    [
+     835.8,
+     523.1
+    ],
+    [
+     822.5,
+     517.6
+    ],
+    [
+     811.1,
+     508.9
+    ],
+    [
+     802.4,
+     497.5
+    ],
+    [
+     796.9,
+     484.2
+    ],
+    [
+     795.0,
+     470.0
+    ],
+    [
+     807.0,
+     470.0
+    ],
+    [
+     808.5,
+     481.1
+    ],
+    [
+     812.8,
+     491.5
+    ],
+    [
+     819.6,
+     500.4
+    ],
+    [
+     828.5,
+     507.2
+    ],
+    [
+     838.9,
+     511.5
+    ],
+    [
+     850.0,
+     513.0
+    ],
+    [
+     861.1,
+     511.5
+    ],
+    [
+     871.5,
+     507.2
+    ],
+    [
+     880.4,
+     500.4
+    ],
+    [
+     887.2,
+     491.5
+    ],
+    [
+     891.5,
+     481.1
+    ],
+    [
+     893.0,
+     470.0
+    ]
+   ],
+   "shape": "poly",
+   "type": "rock"
+  },
+  {
+   "center": [
+    732.0,
+    353.0
+   ],
+   "id": "PX0",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    564.0,
+    129.0
+   ],
+   "id": "PX1",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  },
+  {
+   "center": [
+    256.0,
+    185.0
+   ],
+   "id": "PX2",
+   "rotation": 0,
+   "shape": "rect",
+   "size": [
+    62,
+    20
+   ],
+   "type": "poison"
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    850,
+    470
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 840,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 3,
+  "parInk": 730
+ },
+ "tip": {
+  "en": "Flip pads work both ways.",
+  "ar": "لوحة القلب تعمل في الاتجاهين."
+ },
+ "hint": {
+  "en": "Fall up to the blue ceiling, then flip again to fall down to the goal.",
+  "ar": "اسقط للأعلى إلى السقف الأزرق، ثم انقلب مجددًا لتسقط نحو الهدف."
+ },
+ "star": {
+  "pos": [
+   547.0,
+   84.0
+  ]
+ }
+}

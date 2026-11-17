@@ -1,0 +1,181 @@
+{
+ "schemaVersion": 1,
+ "levelId": "c2_03",
+ "revision": 1,
+ "rulesVersion": 2,
+ "title": {
+  "en": "Two Doors",
+  "ar": "بابان"
+ },
+ "difficulty": "easy",
+ "chapter": 2,
+ "number": 3,
+ "board": {
+  "width": 960,
+  "height": 540
+ },
+ "gravity": [
+  0,
+  630
+ ],
+ "maxSpeed": 1080,
+ "material": {
+  "obstacle": {
+   "restitution": 0.5,
+   "friction": 0.6
+  },
+  "rail": {
+   "restitution": 0.25,
+   "friction": 0.35
+  }
+ },
+ "runDurationLimit": 50,
+ "ballLifetime": 22,
+ "launchers": [
+  {
+   "id": "L1",
+   "pos": [
+    75,
+    100
+   ],
+   "velocity": [
+    240,
+    0
+   ],
+   "ballRadius": 6,
+   "colors": [
+    "yellow"
+   ],
+   "count": 7,
+   "interval": 0.55,
+   "delay": 0.0
+  }
+ ],
+ "obstacles": [
+  {
+   "id": "R1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    215,
+    215
+   ],
+   "size": [
+    130,
+    22
+   ],
+   "rotation": -20,
+   "color": "red"
+  },
+  {
+   "id": "W1",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    400,
+    120
+   ],
+   "size": [
+    24,
+    240
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G1",
+   "type": "gate",
+   "color": "red",
+   "shape": "rect",
+   "center": [
+    400,
+    390
+   ],
+   "size": [
+    24,
+    300
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "B1",
+   "type": "painter",
+   "shape": "rect",
+   "center": [
+    545,
+    462
+   ],
+   "size": [
+    130,
+    22
+   ],
+   "rotation": 8,
+   "color": "blue"
+  },
+  {
+   "id": "W3",
+   "type": "neutral",
+   "shape": "rect",
+   "center": [
+    680,
+    120
+   ],
+   "size": [
+    24,
+    240
+   ],
+   "rotation": 0
+  },
+  {
+   "id": "G2",
+   "type": "gate",
+   "color": "blue",
+   "shape": "rect",
+   "center": [
+    680,
+    390
+   ],
+   "size": [
+    24,
+    300
+   ],
+   "rotation": 0
+  }
+ ],
+ "collectors": [
+  {
+   "id": "C1",
+   "center": [
+    770,
+    495
+   ],
+   "innerRadius": 34,
+   "targetColor": "blue",
+   "requiredCount": 5
+  }
+ ],
+ "drawingRules": {
+  "maxStrokes": 0,
+  "maxInkLength": 640,
+  "minStrokeLength": 12,
+  "railWidth": 6,
+  "forbiddenZones": []
+ },
+ "scoring": {
+  "parStrokes": 2,
+  "parInk": 460
+ },
+ "tip": {
+  "en": "Red door first, then the blue door.",
+  "ar": "الباب الأحمر أولًا، ثم الباب الأزرق."
+ },
+ "hint": {
+  "en": "Turn red for the first door, then blue for the second.",
+  "ar": "صِر أحمر للباب الأول، ثم أزرق للثاني."
+ },
+ "star": {
+  "pos": [
+   449.0,
+   382.0
+  ]
+ }
+}
